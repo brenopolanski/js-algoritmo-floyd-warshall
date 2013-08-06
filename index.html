@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Algoritmo Floyd-Warshall</title>
+	  	<meta name="author" content="Breno Polanski"/>
+	  	<meta name="description" content="Algoritmo de Floyd-Warshall"/>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="floyd.js"></script>
+		<script>
+			$(document).ready(function(){
+				var grafo = [[NaN, 7,   9,   NaN, NaN, 16],
+				             [7,   NaN, 10,  15,  NaN, NaN],
+				             [9,   10,  NaN, 11,  NaN, 2],
+				             [NaN, 15,  11,  NaN, 6,   NaN],
+				             [NaN, NaN, NaN, 6,   NaN, 9],
+				             [16,  NaN, 2,   NaN, 9,   NaN]];
+
+				algoritmoFloydWarshall.floydWarshall(grafo);
+			});	
+		</script>
+	</body>
+</html>
