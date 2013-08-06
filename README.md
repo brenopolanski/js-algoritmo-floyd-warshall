@@ -1,4 +1,4 @@
-## Algoritmo de Busca em largura
+## Algoritmo de Floyd-Warshall
 
 Encontra a menor distância entre os vértices do grafo.
 
